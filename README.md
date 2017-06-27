@@ -1,4 +1,7 @@
 # Mend-Physical-Therapy
-Client Website - Julie Nye (Simpson)
 
+Basic Web Developement Demo
+Website: 
+
+Actual Client Website - Julie Simpson
 Website: http://www.mendthebody.com/
