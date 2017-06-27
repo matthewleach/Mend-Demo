@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+/* === Common Structure === */
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+/* -------- =Column Layout -------*/
+
+.container {
+    width: 980px;
+    margin: auto;
+}
+
+.container-fluid {
+    width: 100%;
+    margin: auto;
+}
+
+.container:after,
+.container-fluid:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.col-1  {  width: 8.33333333%;   }
+.col-2  {  width: 16.66666667%;  }
+.col-3  {  width: 25%;           }
+.col-4  {  width: 33.33333333%;  }
+.col-5  {  width: 41.66666667%;  }
+.col-6  {  width: 50%;           }
+.col-7  {  width: 54.33%;        }
+.col-8  {  width: 66.66666667%;  }
+.col-9  {  width: 75%;           } 
+.col-10 {  width: 83.33333333%;  }
+.col-11 {  width: 91.66666667%;  }
+.col-12 {  width: 100%;          }
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  float: left;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.row:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* === Typography === */
+
+body,
+html {
+    font-family: 'Muli', sans-serif;
+    color: #777;
+    /* Makes text a little thinner and clearer. Not yet added to all browsers. */
+    
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    /* Attached to Logo for SEO purposes, but not visable */
+    
+    font-size: 0;
+}
+
+h2 {
+    margin: 0 0 20px 0;
+    font-weight: 500;
+    font-size: 34px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 22px;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    line-height: 24px;
+    margin: 1rem 0 1.25rem;
+}
+
+li {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    line-height: 24px;
+}
+
+a {
+    color: #197da1;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #222;
+}
+
+ul,
+ol {
+    font-size: 18px;
+    color: #333;
+    margin-left: 1em;
+}
+
+.text-center {
+    text-align: center;
+}
+/* === Visual Elements === */
+
+hr {
+    width: 50%;
+    height: 2px;
+    background: #197da1;
+    margin: 0 auto 40px auto;
+    border: 0;
+}
+
+hr.full {
+    width: 100%;
+    height: 2px;
+    background: #197da1;
+    margin: 40px auto 60px auto;
+    border: 0;
+}
+
+.btn {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #8D78C9;
+    border: 0;
+    padding: 14px 20px;
+    margin: 0 5px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: all 0.5s;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn:active {
+    color: #fff;
+    background-color: #f0893c;
+}
+/* === Header / Nav === */
+
+header {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+header .logo {
+    width: 135px;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+header nav {
+    float: right;
+    margin-top: 40px;
+}
+
+header nav a {
+    text-transform: uppercase;
+    color: #197da1;
+    font-weight: 900;
+    font-size: 15px;
+    padding: 15px 0 32px 0;
+    border: 2px solid transparent;
+    letter-spacing: 0.5px;
+    margin: 20px 15px 0 15px;
+    transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+}
+
+header nav a:hover {
+    color: #f0893c;
+    /* Orange */
+}
+/* === Hero Section === */
+
+.hero {
+    width: 100%;
+    padding: 0;
+    background-color: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hero-home {
+    background-image: url(../img/hero1.jpg);
+}
+
+.hero-about {
+    background-image: url(../img/hero2.jpg);
+}
+
+.hero-new-clients {
+    background-image: url(../img/hero3.jpg);
+}
+
+.hero .row {
+    padding-top: 160px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.hero p {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 42px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-color: rgba(23, 117, 150, 0.5);
+    padding: 10px 20px;
+}
+/* === Main Section Layout === */
+
+main .content-block {
+    margin: 120px 0 100px 0;
+}
+
+main .icon {
+    width: 152px;
+    margin: auto;
+}
+
+main .logo {
+    width: 200px;
+    margin: auto;
+}
+/* -------- =Callout Section -------*/
+
+.callout {
+    padding: 30px 0;
+    margin: 60px 0;
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(25, 125, 161, 1) 50%, rgba(23, 116, 149, 1) 100%);
+}
+
+.callout h2 {
+    font-family: 'Muli', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    margin: 0;
+    text-transform: none;
+    text-align: center;
+}
+
+.callout p {
+    font-size: 22px;
+    color: #fff;
+}
+/* === Contact Section === */
+
+#contact {
+    background-color: #262626 !important;
+    padding: 30px;
+}
+
+#contact .container {
+    padding: 0;
+}
+
+#contact p {
+    color: #fff;
+    font-size: 170%;
+}
+
+#contact a {
+    color: #fff;
+}
+
+#contact hr {
+    /* overrides standard hr */
+    
+    margin-top: 40px;
+    background-color: #fff;
+}
+/* Map Section*/
+
+#map {
+    height: 400px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* Footer Section*/
+
+#footer {
+    background: #262626;
+    padding: 50px 0 0 0;
+}
+
+#footer .copyrights {
+    padding: 20px 0;
+    margin-top: 50px;
+    background: linear-gradient(to bottom, rgba(25, 125, 161, 1) 50%, rgba(23, 116, 149, 1) 100%);
+}
+
+#footer .social {
+    margin: 20px 0 30px 0;
+}
+
+#footer .social ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+#footer .social i.fa {
+    font-size: 26px;
+    padding: 4px;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#footer .social i.fa:hover {
+    color: #ccc;
+}
+
+#footer p {
+    font-size: 15px;
+    color: #fff;
+}
+
+#footer a:hover {
+    color: #333;
+}
+/* About > Testimonials */
+
+blockquote {
+    padding-left: 40px;
+    text-indent: -0.55em;
+    font-size: 160% !important;
+    border-left: 4px solid #197DA1;
+}
+
+blockquote .quote {
+    font-size: 120% !important;
+    font-family: "arial black";
+    line-height: 100%;
+    color: #F0893C;
+}
+
+blockquote footer {
+    text-align: right;
+    color: #197DA1;
+}
+
+blockquote.alt {
+    border-left: 4px solid #F0893C;
+}
+
+blockquote.alt .quote {
+    color: #197DA1;
+}
+/* About > Photo Gallery */
+
+.photo-gallery .row {
+    margin-bottom: 20px;
+}
+
+.photo-gallery img {
+    border: 1px solid #999 !important;
+}
+/* Home Page > Services */
+
+.services h2 {
+    font-size: 170%;
+}
+
+.space-top {
+    margin-top: 40px;
+}
